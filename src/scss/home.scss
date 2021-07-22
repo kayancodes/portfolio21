@@ -1,0 +1,374 @@
+
+
+
+//DEBUT CORPS DE PAGE -----------------------------------//
+#wrapper {
+  padding: 0 1.25rem;
+  display: block;
+  // margin-top: 20%;
+  // background-color: red;
+  // border:1px solid red;
+
+  @include md {
+    width: 768px;
+    margin: 0 auto;
+    padding: 0%;
+    // padding: 12rem 0 0 0rem;
+
+  }
+
+  @include xl {
+    width: 1024px;
+  }
+
+
+
+  //DEBUT HEADER -----------------------------------------//
+  .header {
+    padding: 6.5rem 0 1.5rem;
+
+    @include md {
+      margin-bottom: 2rem;
+    }
+  }
+
+  //FIN HEADER --------------------------------------------//
+
+
+
+
+
+  //DEBUT COMPETENCES -------------------------------------//
+  section#comp {
+    padding-top: 5rem;
+  }
+
+  //DEBUT COMP -------------------------------------//
+  .container.comp {
+    @include md {
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    @include xl {
+      width: 100%;
+    }
+
+    .container__box.container__box--comp {
+      //chaque domaine de competence
+      border: 1px solid lightgray;
+      padding: 1.5rem;
+
+      @include md {
+        text-align: left;
+        width: 40%;
+
+
+
+        &:nth-child(2n+2) {
+          //les competences de droite
+          margin-left: 1.6rem;
+          width: 47%;
+
+          @include md {
+            width: 38.5%;
+            margin-left: 2rem;
+            margin-bottom: 3rem;
+          }
+        }
+
+
+        &:nth-child(2n+1) {
+
+          //les competences de gauche
+          // background: blue;
+          @include md {
+            // margin-right: 2rem;
+            margin-bottom: 3rem;
+          }
+
+          @include xl {
+            margin-right: 2rem;
+            margin-bottom: 3rem;
+          }
+        }
+      }
+    }
+  }
+
+
+  //DEBUT STATISTIQUE-------------------------------//
+  .containerStats.container {
+
+    .container__box--stats {
+      padding: 1.2rem 0;
+      text-align: center;
+
+      @include md {
+        width: 21%;
+        justify-content: space-around;
+      }
+    }
+  }
+
+
+
+  //DEBUT REALISATIONS----------------------------------//
+  .real {
+
+    @include md {
+      width: 95%;
+      margin: 0 auto;
+    }
+
+    .container__box--real {
+      margin-bottom: 8rem;
+      width: 100%;
+
+      @include md {
+        width: 100%;
+        margin: 0 0 12rem 0rem;
+        display: flex;
+        padding: 2rem 0rem;
+        text-align: center;
+        padding: 0 0 0 .7rem;
+      }
+
+      //------------------debut projet
+      .real__projet {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+
+        @include md {
+          justify-content: center;
+        }
+      }
+
+      .real__projetImpair {
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+
+        @include md {
+          justify-content: center;
+        }
+      }
+
+      //-------------------fin projet
+
+
+
+      //------------------debut text projet
+      .real__projet--text {
+        padding: 0rem 0rem 0 0;
+        display: none;
+
+        @include md {
+          width: 30%;
+          text-align: center;
+          height: 91%;
+          display: block;
+          padding: .5rem 0rem 0 0;
+          border-top: 1px solid lightgray;
+        }
+
+
+        &:nth-child(2n+2) {
+          //block text 1 sur 2 //pour le 2eme et pour 4eme 
+          text-align: right;
+          display: block;
+
+          @include md {
+            margin-left: 3.5rem;
+            text-align: center;
+          }
+
+          @include xl {
+            padding-top: .5rem;
+          }
+        }
+
+
+        &:nth-child(2n+1) {
+          //block text 1 sur 2 //pour le 2eme et pour 4eme 
+          margin-right: 3.5rem;
+        }
+      }
+
+      
+
+      .ghost__desktop {
+        //texte projet Visible SEULEMENT en MOBILE
+        display: block;
+      
+        @include md {
+          display: none;
+        }
+      }
+
+      //------------------fin text projet
+     
+
+    }
+
+
+  
+    }
+
+  //FIN REALISATIONS----------------------------------//
+
+
+
+
+
+
+
+  //DEBUT A PROPOS -----------------------------------------//
+  .container.apro {
+
+
+    @include md {
+      padding: 0 10%;
+    }
+
+
+
+    //------------------debut image
+    .apro__cadre {
+      border: 1px solid lightgray;
+    }
+
+    .apro__img {
+      width: 100%;
+      display: block;
+
+      @include md {
+        padding-right: 3%;
+        width: 45%;
+
+        display: block;
+        margin: 0 auto;
+      }
+
+      @include xl {
+        padding-top: 0;
+      }
+    }
+
+    //------------------fin image
+
+
+
+    //------------------debut text sous image
+    .apro__text {
+      //text sous l'image 
+      width: 100%;
+      margin: 0rem 0 0 0;
+
+      @include md {
+        margin: 1.8rem 0 0 0;
+        color: red;
+      }
+    }
+
+    //------------------fin text sous image
+
+
+    //------------------ DEBUT MES VALEURS + MES CENTRES D'INTERETS
+    .apro__column {
+      margin-top: 3.5rem;
+
+      @include md {
+        width: 100%;
+      }
+
+      .apro__boxContainer {
+
+        @include md {
+          display: flex;
+          width: 100%;
+          justify-content: space-around;
+        }
+
+        .apro__box {
+          width: 50%;
+          margin: 0 auto 1.2rem;
+          padding: 0%;
+          text-align: left;
+
+          @include md {
+            width: 33%;
+            justify-content: space-around;
+          }
+
+        }
+      }
+    }
+
+    //------------------FIN MES VALEURS + MES CENTRES D'INTERETS
+
+
+    //------------------ DEBUT MON PALMARES SPORTIF
+    .apro__prize {
+      margin: 3.5rem 0 0;
+
+      @include md {
+        width: 100%;
+      }
+
+      .apro__boxContainer {
+        text-align: left;
+        margin: 0 auto 1.2rem;
+        color: pink;
+
+        @include md {
+          width: 100%;
+          text-align: center;
+        }
+
+        @include xl {
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  //------------------ FIN MON PALMARES SPORTIF
+
+
+
+  //DEBUT CONTACT -----------------------------------------//
+  .contact {
+    margin-bottom: 20rem;
+  }
+
+  .container__box--cont {
+    width: 80%;
+    margin: 1rem auto 0;
+
+    @include md {
+      padding-left: 0rem;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  //FIN CONTACT --------------------------------------------//
+
+}
+
+//FIN WRAPPER CORPS DE PAGE -----------------------------------//
+
+
+
+
+//DEBUT FOOTER -----------------------------------//
+footer {
+  border-top: 1px solid lightgrey;
+  // background-color: lightgrey;
+  text-align: center;
+  padding: .3rem 0 .3rem;
+}
+
+//FIN FOOTER -----------------------------------//

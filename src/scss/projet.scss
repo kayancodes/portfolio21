@@ -1,0 +1,162 @@
+
+
+section.projet__presentation{
+  padding-top: 5rem;
+}
+
+
+
+
+
+//----------------------------------------DEBUT STRUCTURE BASE 1 
+.projet__container{
+  // border: 1px solid red;
+  @include md{
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+  }
+}
+//----------------------------------------FIN STRUCTURE BASE 1
+
+
+
+
+
+
+
+//------------debut presentation info 1-------------//
+.projet__presentation--infos1{
+  // border: 1.5px solid red;
+
+
+  @include md{
+    width: 57%;
+    padding: 0 3rem 0rem 0rem;
+    margin: 0;
+  }
+}
+//------------debut presentation info 1------------//
+
+
+
+
+//------------debut presentation info 2------------//
+.projet__presentation--infos2{
+
+  .projet__presentation--infosBox{
+    margin-bottom: 1.5rem;
+
+  }
+  @include md{
+    width: 25%;
+    text-align: left;
+  }
+}
+//------------debut presentation info 2-----------//
+
+
+
+
+
+//----------------DEBUT STRUCTURE BASE 2 : POUR LES SECTION PAGE INSCRIPTION ET CONFIRMATION 
+/////////@include
+.projet__base{
+  
+  .projet__infos{
+    // border: 1px solid red;
+    
+
+    @include md{
+      width: 55%;
+      padding:0 0 0 3rem;
+    }
+  }
+}
+
+
+//////////////////////
+
+.projet__vizu{
+  // border: 2px solid red;
+  margin:0 0 3rem 0;
+
+  @include md{
+    width: 25%;
+    // padding: 0;
+  }
+
+  .border_out{
+    border: 1.5px solid lightgray;
+    padding: 3rem .5rem;
+  }
+
+  .img__infos{
+    width: 100%;
+    display: block;
+    text-align: center;
+    border: 1.5px solid lightgray;
+  }
+}
+
+//----------------------FIN STRUCTURE BASE 2 : POUR LES SECTION PAGE INSCRIPTION ET CONFIRMATION 
+
+.projet__infos.projet__confirmation{
+  margin:0 0rem 3rem 0;
+    @include md{
+      padding:0 3rem 0 0;
+    }
+  
+}
+
+.projet__vizu.projet__confirmation{
+  margin:0 0rem 0rem 0;
+}
+
+.projet__confirmation--image{
+  margin-top: 5rem;
+  
+
+  img{
+    border: 1px solid lightgray;
+    padding: .5rem;
+    width: 100%;
+
+    @include md{
+      width: 85%;
+      display: block;
+      margin:auto;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

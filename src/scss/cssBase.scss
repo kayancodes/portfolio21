@@ -1,0 +1,539 @@
+//SOMMAIRE  
+//FONT FAMILY
+//COLORS 
+//LAYOUTS
+//STRUCTURE DE BASE
+//LES TITRES
+//LES PARAGRAPHES
+//LIENS - CTA
+//ANCRAGE
+//IMAGES
+
+
+
+
+
+
+
+//----------------DEBUT FONT FAMILY
+//Thin 100
+//Light 300
+//Regular 400
+//Medium 500
+//Bold 700
+//Black 900
+
+//ROBOTO
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&display=swap');
+
+
+//OPEN SANS
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Source+Code+Pro:wght@700&display=swap');
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@700&display=swap');
+
+//----------------DEBUT FONT FAMILY
+
+
+
+
+
+
+//----------------DEBUT COLORS 
+$color0:#fff;
+$color1:#000;
+$color9:#999999;
+//----------------FIN COLORS 
+
+
+
+
+
+
+
+//----------------DEBUT LAYOUTS
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: $color0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 4vw;
+  font-family: 'Open Sans', sans-serif;
+  // background:lightblue;;
+
+  @include md {
+    font-size: 16px;
+    position: relative;
+    width: 100%;
+  }
+}
+
+//----------------FIN LAYOUTS
+
+
+
+
+
+//-----DEBUT STRUCTURE DE BASE -----------------------------------//
+section {
+  padding-top: 15rem;
+
+  .container {
+    margin: 0 0 0 0;
+
+    @include md {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+
+    .container__box {
+      margin: 0 0 2rem 0rem;
+
+      @include md {
+        width: 30%;
+        margin: 0 0 0rem 0rem;
+      }
+
+      @include xl {
+        padding: 0%;
+      }
+    }
+  }
+}
+
+.ghost__desktop {
+  //texte projet Visible SEULEMENT en MOBILE
+  display: block;
+
+  @include md {
+    display: none;
+  }
+}
+
+.ghost__mobile{
+  display: none;
+
+  @include md {
+    display: block;
+  }
+}
+
+
+
+
+
+
+
+
+  
+
+
+//-----fin section
+//------FIN STRUCTURE DE BASE -----------------------------------//
+
+
+
+
+//-----DEBUT TITRES -----------------------------------//
+h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  word-spacing: .6rem;
+  margin-bottom: 1rem;
+  font-family: 'Roboto', sans-serif;
+
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 1rem;
+
+  @include md {
+    width: 82%;
+    margin: auto;
+
+  }
+}
+
+
+
+h2.header__titre {
+  //titre du haut 
+  color: gray;
+  margin: 0 0 1rem 0;
+  letter-spacing: 0.1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-family: 'Roboto', sans-serif;
+
+  @include md {
+    font-size: 1.5em;
+  }
+
+}
+
+
+h2 {
+  //titres de sections
+  font-size: .9rem;
+  font-weight: 600;
+  letter-spacing: 0.0625rem;
+  line-height: 2rem;
+  margin: 0 0 3.5rem 0rem;
+  text-align: center;
+  color: gray;
+  font-family: 'Roboto', sans-serif;
+
+  @include md {
+    font-size: 1.2em;
+    line-height: 3rem;
+    margin: 0 0 2rem 0rem;
+  }
+}
+
+
+h3 {
+  color: black;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 0 .5rem 0;
+  letter-spacing: 0.1rem;
+  margin-bottom: 0.3rem;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+
+  @include md {
+    text-align: left;
+  }
+}
+
+
+//a propos
+.apro {
+  h3 {
+    text-align: center;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: .8rem;
+    margin-bottom: .3rem;
+  }
+}
+
+
+h4 {
+  margin: 0 0 .5rem 0;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  color: gray;
+}
+
+//projet
+.projet__presentation{
+  h4{
+    text-align: left;
+    margin: 0 0 .2rem 0;
+    color: gray;
+  }
+}
+
+
+
+//-----FIN TITRES -----------------------------------//
+
+
+
+
+
+//-----DEBUT PARAGRAPHES--------------------------//
+p {
+  font-size: 1.1rem;
+  font-weight: 100;
+  line-height: 1.8rem;
+  padding: 0.2rem 0;
+  color: gray;
+  margin-bottom: .4rem;
+  text-align: justify;
+
+  @include md {
+    font-size: 1.12rem;
+  }
+}
+
+
+//competences
+.container__box--comp {
+  p {
+    padding: 0.3rem 0;
+
+    @include md {
+      color: gray;
+      padding: 0.3rem 0;
+
+    }
+  }
+}
+
+
+//statistique
+.container__box--stats {
+  p {
+    text-align:center;
+
+    &:nth-child(1) {
+      font-size: 2.5rem;
+      font-weight: 400;
+      margin-bottom: .3rem;
+      color: black;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    &:nth-child(2) {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: .8rem;
+
+      @include md {
+        margin-bottom: .5rem;
+        font-size: 1rem;
+      }
+    }
+
+    &:nth-child(3) {
+      font-weight: 100;
+      line-height: 0;
+    }
+  }
+}
+
+
+//realisation
+.real__projet--text {
+
+  p {
+
+    &:nth-child(1),
+    :nth-child(3) {
+      font-weight: 100;
+      font-size: .9rem;
+
+      @include xl {
+        font-size: 1.2rem;
+      }
+    }
+
+    &:nth-child(2) {
+      font-weight: 600;
+      font-size: 1.25rem;
+      margin: .3rem 0;
+      line-height: 1.7rem;
+      color: black;
+
+      @include xl {
+        font-size: 1.8rem;
+        margin: 1.5rem 0 1.8rem;
+        line-height: 2.1rem;
+      }
+    }
+  }
+}
+
+
+
+//a propos
+.apro__boxContainer {
+
+  p:nth-child(3) {
+    //le 2eme P de palmares sportif
+    margin-top: .7rem;
+  }
+}
+
+
+.apro {
+  p{
+    text-align: center;
+  }
+  p.apro__text--3{
+   text-align: justify;
+  }
+}
+
+
+.apro__text {
+  p {
+
+    &:nth-child(1) {
+      //"yann integrateur...
+      color: black;
+      font-size: 1.4rem;
+      font-weight: 500;
+      font-family: "roboto", sans-serif;
+      margin: .8rem 0 0;
+
+    }
+
+    &:nth-child(2) {
+      //passionée par...
+      color: gray;
+      font-size: 1.2rem;
+      font-weight: 500;
+      margin: .8rem 0 .5rem;
+      font-family: "roboto", sans-serif;
+    }
+  }
+
+}
+
+
+
+//contact
+.container__box--cont {
+  p {
+    text-align: center;
+    // display: block;
+    width: 100%;
+    margin-bottom: 1.3rem;
+  }
+}
+
+
+//FOOTER 
+footer{
+  p{
+    text-align: center;
+  }
+}
+
+//-----FIN PARAGRAPHES--------------------------//
+
+
+
+
+
+
+
+//-----DEBUT LIENS - CTA--------------------------//
+a {
+  text-decoration: none;
+  color: gray;
+  font-size: .9rem;
+  list-style: none;
+}
+
+
+//CONTACT
+.container__box--cont {
+  a {
+    font-size: 1.1rem;
+
+    @include md {
+      font-size: 1.1rem;
+    }
+  }
+}
+
+//BOUTONS
+.bouton {
+  display: block;
+  margin: .8rem auto 0;
+  padding: .7rem 0rem;
+  border: 1px solid lightgray;
+  border-radius: 0px;
+  text-align: center;
+  list-style: none;
+  background-color: white;
+
+  @include md {
+    width: 15rem;
+  }
+}
+
+
+//REALISATION
+p.bouton {
+  width: auto;
+  padding: .4rem 0rem;
+  border-color: lightgray;
+  margin: 2.6rem auto 0rem;
+  background-color: white;
+  color: black;
+
+  @include md {
+    margin: 6.3rem auto 0rem;
+  }
+
+
+  @include xl {
+    margin: 8rem 0rem 1rem;
+  }
+}
+
+//-----FIN LIENS - CTA--------------------------//
+
+
+
+//-----DEBUT ANCRAGE------------------------------//
+.ank {
+  margin-bottom: 5rem;
+}
+
+.ank.stats {
+  @include xl {
+    margin-bottom: 17rem;
+  }
+
+}
+
+//-----FIN ANCRAGE------------------------------//
+
+
+
+
+
+//-----DEBUT IMAGES -----------------------------------//
+// img{
+//   border: 1px solid lightgray;
+//   padding: .4rem;
+//   }
+
+.real__projet--img {
+  width: 100%;
+  margin-bottom: 1.5rem;
+  // filter:drop-shadow(10px 12px 7px #A9A9A9);
+  border: 1px solid lightgray;
+  padding: .4rem;
+
+  @include md {
+    width: 55%;
+    // border: 1px solid red;
+  }
+}
+
+//-----FIN IMAGES -----------------------------------//

@@ -1,0 +1,53 @@
+//MIXINS
+
+//320px extra small devices 
+@mixin xs {
+    @media (min-width: #{$screen-xs-min}){
+      @content;
+    }
+  }
+
+  //375px small devices
+@mixin s {
+    @media (min-width: #{$screen-s-min}){
+      @content;
+    }
+  }
+
+   //414px small-medium devices
+@mixin sm {
+  @media (min-width: #{$screen-sm-min}){
+    @content;
+  }
+}
+
+  
+  
+  //768px Medium devices
+  @mixin md {
+    @media (min-width: #{$screen-md-min}){
+      @content;
+    }
+  }
+  
+  
+  //962px Large devices
+  @mixin lg {
+    @media (min-width: #{$screen-lg-min}){
+      @content;
+    }
+  }
+  
+  //1024px Extra large devices
+  @mixin xl {
+    @media (min-width: #{$screen-xl-min}){
+      @content;
+    }
+  }
+
+  //1440px Extra Extra large devices
+  @mixin xxl {
+    @media (min-width: #{$screen-xxl-min}){
+      @content;
+    }
+  }
